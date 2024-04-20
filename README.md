@@ -34,24 +34,28 @@ URL: http://localhost:8090
 
 
 ## Сборка и запуск
-0. Используйте docker-compose файл для запуска зависимостей Zookeeper и Kafka
-```Bash
-docker-compose up
-```
 1. Скопируйте репозиторий:
 ```Bash
 git clone https://github.com/OrlovDeniss/app-monitoring.git
 ```
-2. Перейдите в папку metrics-producer:
+2. Перейдите в каталог проекта:
 ```Bash
-cd app-monitoring/metrics-producer
+cd app-monitoring
 ```
-3. Скомпилируйте исходные файлы producer-service:
+3. Используйте docker-compose для запуска зависимостей Zookeeper и Kafka:
+```Bash
+docker-compose up
+```
+4. Перейдите в каталог metrics-producer:
+```Bash
+cd metrics-producer
+```
+5. Скомпилируйте исходные файлы metrics-producer:
 ```Bash
 mvn clean package
 ```
-4. Запустите metrics-producer из папки target:
+6. Запустите metrics-producer из папки target:
 ```Bash
 java -jar metrics-producer-0.0.1-SNAPSHOT.jar
 ```
-5. Повторите пункты 2-4 для metrics-consumer.
+7. Повторите пункты 4-6 для metrics-consumer.
