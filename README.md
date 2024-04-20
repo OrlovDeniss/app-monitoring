@@ -28,9 +28,13 @@ URL: http://localhost:8090
 
 ## Зависимости
 
-- Zookeeper: http://localhost:2181
+Zookeeper: 
+http://localhost:2181
 
-- Kafka: http://localhost:9092
+Kafka:
+http://localhost:9092. 
+
+Подробнее: docker-compose.yml
 
 
 ## Сборка и запуск
